@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<body background="wi_back.jpg"></body>
+<html>
+<head>
+	<title>Auswahlleiste</title>
+<script language="JavaScript">
+<!--
+function Go(x)
+{
+if(x == "nothing")
+ { 
+   document.forms[0].reset();
+   document.forms[0].elements[0].blur();
+   return;
+   }
+   else if (x == "end") top.location.href =
+   parent.frames[1].location;
+   else
+   {
+    parent.frames[1].location.href = x;
+	document.forms[0].reset();
+	document.forms[0].elements[0].blur();
+	}
+}
+//-->
+
+</script>
+</head>
+
+<body>
+<table style="HEIGHT: 25px; WIDTH: 553px">
+
+<tr>
+	<td>
+<form>
+<select size=1 name="Auswahl" onChange="Go(this.form.Auswahl.options[this.form.Auswahl.options.selectedIndex].value)"
+
+style="width:350px; background-color:#FFFFE0;
+font-size:9pt; font-family:Arial,sans-serif;" width=350>
+<option value="nothing">Texte / All
+<option value="nothing">----------------------------------
+<option value="fun/weisheit.txt">27 Weisheiten &uuml;ber Frauen 
+<option value="fun/30.txt">Schnee bis zum Wahnsinn
+<option value="fun/50.txt">Zu viel Counterstrike
+<option value="fun/betriebsausflug.txt">Betriebsausflug
+<option value="fun/lol.txt">lol
+<option value="fun/frau im himmel.txt">Frau im Himmel
+<option value="fun/fussballerzitate.txt">Fussballerzitate
+<option value="fun/internetsucht.txt">Internetsucht
+<option value="fun/kaufhaus.txt">Kaufhaus
+<option value="fun/nasenpopeln.txt">Nasenpopeln
+<option value="fun/radiozappen.txt">Radiozappen
+<option value="fun/unigelaber.txt">Unigelaber
+<option value="fun/weisheiten und dummheiten.txt">Weisheiten und Dummheiten
+<option value="fun/wie man seinen hund nicht nennen sollte.txt">Wie mann seinen hund nicht nennen sollte
+</select>
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<td></TD></TR></TABLE></DIV>
+
+
+
+</body>
+</html>

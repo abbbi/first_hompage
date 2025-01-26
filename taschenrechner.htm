@@ -1,0 +1,147 @@
+
+<body background="wi_back.jpg"></body>
+<html>
+<head>
+	<title>Taschenrechner</title>
+<script language="JavaScript">
+<!--
+function Quadrat (Zahl)
+{
+	Ergebnis = Zahl * Zahl;
+	alert("Das Quadrat von" + Zahl + " = " + Ergebnis);
+	alert("HUUUUUHHHHH Krass!!!!!!");
+}
+//-->
+</script>
+<script language="JavaScript">
+<!--
+function Ergebnis()
+{
+	var x = 0;
+	x = eval(window.document.Rechner.Display.value);
+	window.document.Rechner.Display.value = x;
+}
+
+
+function Hinzufuegen(Zeichen)
+{
+	window.document.Rechner.Display.value = 
+	window.document.Rechner.Display.value + Zeichen;
+}
+
+function Sonderfunktion(Funktion)
+{
+if(Funktion == "sqrt")
+{
+var x = 0;
+x = eval(window.doucument.Rechner.Display.value);
+window.document.Rechner.Display.value = Math.sqrt(x);
+}
+if(Funktion == "pow")
+{
+var x = 0;
+x = eval(window.document.Rechner.Display.value);
+window.document.Rechner.Display.value = x * x;
+}
+if(Funktion == "log")
+{
+var x = 0;
+x = eval(window.document.Rechner.Display.value);
+window.document.Rechner.Display.value = Math.log(x);
+}
+}
+//-->
+</script>
+</head>
+
+<!----------------------------------------------------------------->
+
+<body>
+<h1><u>Taschenrechner:</u></h1>
+<p><font color="green"><b>Hier ein Taschenrechner (Wahrscheinlich wird ihn keiner benutzen, schön ausschaun tut er aber schon) </b></font>
+<center><p><font color="red">Wenn er nicht funktioniert: "Aktualisieren" betätigen, dann funktioniert er</p></center>
+<center><form name="Rechner">
+<body bgcolor=#CCCCCC text=#000000 link=#0000CC
+	vlink=#000099 alink=#0000FF>
+<table border=10 cellpadding=10>
+<tr>
+<td bgcolor=#C0C0C0><input name="Display" size=30 maxlenth=30></td>
+</tr>
+<tr><td><table>
+<tr>
+	<td width=30><input type=button value="    7    "
+	 onClick="Hinzufuegen('7')"></td>
+	
+	<td width=30><input type=button value="    8    "
+	 onClick="Hinzufuegen('8')"></td>
+
+	<td width=30><input type=button value="    9    "
+	 onClick="Hinzufuegen('9')"></td>
+
+	<td width=30><input type=button value="    +    "
+	 onClick="Hinzufuegen('+')"></td>
+
+</tr>
+<tr>
+	<td width=30><input type=button value="    4    "
+	 onClick="Hinzufuegen('4')"></td>
+	
+	<td width=30><input type=button value="    5    "
+	 onClick="Hinzufuegen('5')"></td>
+
+	<td width=30><input type=button value="    6    "
+	 onClick="Hinzufuegen('9')"></td>
+
+	<td width=30><input type=button value="    -     "
+	 onClick="Hinzufuegen('-')"></td>
+</tr>
+	<tr>
+	<td width=30><input type=button value="    1    "
+	 onClick="Hinzufuegen('1')"></td>
+	
+	<td width=30><input type=button value="    2    "
+	 onClick="Hinzufuegen('2')"></td>
+
+	<td width=30><input type=button value="    3    "
+	 onClick="Hinzufuegen('3')"></td>
+
+	<td width=30><input type=button value="    *     "
+	 onClick="Hinzufuegen('*')"></td>
+</tr>
+	<tr>
+	<td width=30><input type=button value="    =    "
+	 onClick="Ergebnis('=')"></td>
+	
+	<td width=30><input type=button value="    0    "
+	 onClick="Hinzufuegen('0')"></td>
+
+	<td width=30><input type=button value="    .    "
+	 onClick="Hinzufuegen('.')"></td>
+
+	<td width=30><input type=button value="    /      "
+	 onClick="Hinzufuegen('/')"></td>
+</tr>
+<tr>
+<tr>
+<tr>
+	<td width=30><input type=button value="sqrt "
+	 onClick="Sonderfunktion('sqrt')"></td>
+
+	<td width=30><input type=button value="pow "
+	 onClick="Sonderfunktion('pow')"></td>
+
+	<td width=30><input type=button value="log "
+	 onClick="Sonderfunktion('log')"></td>
+<td width=30><input type=reset value="    C    "></td>
+</tr>
+</tr>
+
+</table>
+</td></tr>
+</table>
+<p><center><input type=button value="Klick mal an!!!!" onClick="Quadrat(1231453672154374653574836743647863877378547385463552357574637457567348546384648364857634854638448364)">
+
+</form>
+</body>
+</body>
+</body>

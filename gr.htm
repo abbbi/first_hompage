@@ -1,0 +1,138 @@
+                         
+                         
+<!DOCTYPE HTML PUBLIC "-//SQ//DTD HTML 2.0 + all extensions//EN" "hmpro3.dtd">
+<body background="wi_back.jpg"></body>
+<HTML>
+<HEAD>
+<TITLE>Datatext</TITLE></HEAD>
+<STYLE>BODY {
+        BACKGROUND-COLOR: #ffffff
+}
+A {
+        COLOR: navy; TEXT-DECORATION: none
+}
+A:hover {
+        COLOR: red
+}
+A:visited:unknown {
+        COLOR: #808080
+}
+TD {
+        FONT-FAMILY: arial,helvetica; FONT-SIZE: 10pt
+}
+DIV {
+        FONT-FAMILY: arial,helvetica; FONT-SIZE: 10pt
+}
+</STYLE>
+
+<SCRIPT>
+
+
+//Set these variables:
+
+//The pixel value of where you want the layer to start (from the top)
+lstart=200
+
+//Set this to false if you just want it to go one time
+loop=true
+
+//Set the speed, lower value gives more speed
+speed=100
+
+//Set this to how many pixels you want it to go for each step, this also changes the speed.
+pr_step=5
+
+/**********************************************************************
+You don't have to change anything below this
+**********************************************************************/
+
+//Browsercheck
+        var n = (document.layers) ? 1:0;
+        var ie = (document.all) ? 1:0;
+
+//Object constructor
+function makeObj(obj,nest){
+    nest=(!nest) ? '':'document.'+nest+'.'
+    this.css=(n) ? eval(nest+'document.'+obj):eval(obj+'.style')
+        this.scrollHeight=n?this.css.document.height:eval(obj+'.offsetHeight')
+        this.up=goUp
+    this.obj = obj + "Object"
+    eval(this.obj + "=this")
+    return this
+}
+//Makes the layer slide up
+function goUp(speed){
+        if(parseInt(this.css.top)>-this.scrollHeight){
+                this.css.top=parseInt(this.css.top)-pr_step
+                setTimeout(this.obj+".up("+speed+")",speed)
+        }else if(loop) {
+                this.css.top=lstart
+                eval(this.obj+".up("+speed+")")
+          }
+}
+//Calls the object constructor,makes the slide object and starts the sliding.
+        function slideInit(){
+                oSlide=makeObj('divNews','divCont')
+                oSlide.css.top=lstart
+                oSlide.up(speed)
+
+        }
+//Start the sliding on page load.
+onload=slideInit
+
+</SCRIPT>
+<!-- This is where you set the placement, width and height of the divs, you only have to
+change the divCont, Remeber to set the clip the same as the width and height.-->
+<DIV id=divCont
+style="CLIP: rect(0px 500px 150px 0px); HEIGHT: 900px; LEFT: 170px; POSITION: absolute; TOP: 150px; WIDTH: 300px">
+<DIV id=divNews style="LEFT: 0px; POSITION: absolute; TOP: 0px">
+<P><b><u>Greetz to: </u></b>
+<br>
+<BR>- Painkiller
+<br>- Tormentor
+<br>- Tyreshtwo
+<br>- Zernobyl
+<br>- Texman85[TDG]
+<br>- blackmesa
+<br>- KingOfWin
+<br>- John Carmack for a ripping game
+<br>- Lokadamus
+<br>- LuCiFeRuS
+<br>- rapeme
+<br>- Bobbele
+<br>- McAmigo
+<br>- Blubber
+<br>- Gromet (his PW for CC is "Lexmarkie" ggg
+<br>- Netbound
+<br>- Coca99
+<br>- Dreamygirl
+<br>- DarkElfin
+<br>- morpheus23
+<br>- Redwood
+<br>- .........................
+
+</P>
+<P>
+<br>
+<br><b><u>Reallive:</b></u>
+<br>
+<br>- Stefan
+<br>- Quirin
+<br>- Mette
+<br>- Flo
+<br>- Tobi
+<br>- Peter
+<br>- Matt
+<br>- Hermann
+<br>- Sascha
+<br>- Dominik
+<br>- Amets (the wanker)
+<br>- ...........
+<br>
+<br><b>CU..TheExploited</b>
+
+<BR></P></DIV></DIV>
+</BODY></HTML>
+
+                       
+                       
